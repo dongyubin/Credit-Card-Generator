@@ -3,7 +3,6 @@ import CreditCard from "@/components/home/CreditCard";
 import FAQ from "@/components/home/FAQ";
 import Feature from "@/components/home/Feature";
 import Hero from "@/components/home/Hero";
-import Pricing from "@/components/home/Pricing";
 import SocialProof from "@/components/home/SocialProof";
 import { defaultLocale, getDictionary } from "@/lib/i18n";
 
@@ -31,7 +30,7 @@ export default async function LangHome({
       <Feature id="Features" locale={dict.Feature} langName={langName} />
 
       {/* Pricing */}
-      <Pricing id="Pricing" locale={dict.Pricing} langName={langName} />
+      {/* <Pricing id="Pricing" locale={dict.Pricing} langName={langName} /> */}
 
       {/* Testimonials / Wall of Love */}
       {/* <WallOfLove id="WallOfLove" locale={dict.WallOfLove} /> */}

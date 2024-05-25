@@ -42,7 +42,9 @@ export default async function RootLayout({
 }) {
   return (
     <html lang={(lang && lang[0]) || defaultLocale} suppressHydrationWarning>
-      <head />
+      <head>
+        <meta name="google-site-verification" content="KBPn5wrmRqhyywKks4B7wK6kIXpOyxcFpm1FCx4XdR8" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
