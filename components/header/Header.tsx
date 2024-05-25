@@ -18,14 +18,14 @@ const links = [
     label: "Features",
     href: "#Features",
   },
-  {
-    label: "Pricing",
-    href: "#Pricing",
-  },
-  {
-    label: "Wall of Love",
-    href: "#WallOfLove",
-  },
+  // {
+  //   label: "Pricing",
+  //   href: "#Pricing",
+  // },
+  // {
+  //   label: "Wall of Love",
+  //   href: "#WallOfLove",
+  // },
   {
     label: "FAQ",
     href: "#FAQ",
