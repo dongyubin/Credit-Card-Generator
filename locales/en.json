@@ -1,0 +1,47 @@
+{
+  "Hero": {
+    "title1": "Fast & Free",
+    "title2": "Credit Card Generator",
+    "title3": "",
+    "description": "The ultimate free tool for creating dummy credit card numbers."
+  },
+  "SocialProof": {
+    "maker": "Credit card numbers generated"
+  },
+  "Feature": {
+    "title": "Feature"
+  },
+  "Pricing": {
+    "title": "Pricing",
+    "title2": "",
+    "description": "Credit Card Generator is a free feature.",
+    "doYouLike": "Do you like this credit card generator?",
+    "follow": "Follow me on Twitter."
+  },
+  "WallOfLove": {
+    "title": "Wall of Love",
+    "description1": "If you used this landing page template and recommended it on Twitter,",
+    "description2": "let me know",
+    "description3": " and I'll showcase your tweets and recommendations here."
+  },
+  "FAQ": {
+    "title": "FAQs",
+    "description": "Here are some of the most common questions about the Credit Card Generator."
+  },
+  "CTA": {
+    "title": "Generate Credit Card Numbers Now",
+    "description1": "Generate",
+    "description2": " your credit card numbers,",
+    "description3": " batch generation of",
+    "description4": " credit cards,",
+    "description5": " lightning fast",
+    "description6": "!"
+  },
+  "CTAButton": {
+    "title": "Quick Use"
+  },
+  "CreditCard": {
+    "title": "Credit Card Generator",
+    "generate_credit_card_number": "Generate Credit Card Numbers"
+  }
+}

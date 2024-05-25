@@ -1,0 +1,47 @@
+{
+  "Hero": {
+    "title1": "快速免费",
+    "title2": "信用卡生成器",
+    "title3": "",
+    "description": "一个创建虚拟信用卡号码的终极免费工具。"
+  },
+  "SocialProof": {
+    "maker": "信用卡号码已生成"
+  },
+  "Feature": {
+    "title": "Feature"
+  },
+  "Pricing": {
+    "title": "定价",
+    "title2": "",
+    "description": "信用卡生成器是一个免费的功能。",
+    "doYouLike": "你喜欢这个信用卡生成器吗？",
+    "follow": "关注我的推特。"
+  },
+  "WallOfLove": {
+    "title": "Wall of Love",
+    "description1": "如果你使用这个落地页模板并在推特上推荐了，",
+    "description2": "请告诉我",
+    "description3": "，我会在这里展示你的推文和推荐。"
+  },
+  "FAQ": {
+    "title": "FAQs",
+    "description": "这里有一些最常见的信用卡生成器问题。"
+  },
+  "CTA": {
+    "title": "立即生成信用卡号",
+    "description1": "生成",
+    "description2": "你的信用卡号，",
+    "description3": "批量生成",
+    "description4": "信用卡，",
+    "description5": "闪电般快速",
+    "description6": "！"
+  },
+  "CTAButton": {
+    "title": "快速使用"
+  },
+  "CreditCard": {
+    "title": "信用卡生成器",
+    "generate_credit_card_number": "生成信用卡号码"
+  }
+}

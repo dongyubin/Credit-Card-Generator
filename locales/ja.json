@@ -1,0 +1,47 @@
+{
+  "Hero": {
+    "title1": "速くて無料",
+    "title2": "クレジットカード生成器",
+    "title3": "",
+    "description": "仮のクレジットカード番号を作成する究極の無料ツールです。"
+  },
+  "SocialProof": {
+    "maker": "生成されたクレジットカード番号"
+  },
+  "Feature": {
+    "title": "特徴"
+  },
+  "Pricing": {
+    "title": "価格",
+    "title2": "",
+    "description": "クレジットカード生成器は無料の機能です。",
+    "doYouLike": "このクレジットカード生成器が好きですか？",
+    "follow": "私のTwitterをフォローしてください。"
+  },
+  "WallOfLove": {
+    "title": "愛の壁",
+    "description1": "このランディングページのテンプレートを使い、Twitterで推奨した場合、",
+    "description2": "教えてください",
+    "description3": "、あなたのツイートと推奨をここに表示します。"
+  },
+  "FAQ": {
+    "title": "よくある質問",
+    "description": "クレジットカード生成器に関する最も一般的な質問はこちらです。"
+  },
+  "CTA": {
+    "title": "今すぐクレジットカード番号を生成",
+    "description1": "生成",
+    "description2": " あなたのクレジットカード番号を、",
+    "description3": " 複数のクレジットカードを生成",
+    "description4": "、",
+    "description5": " 驚くほど速い",
+    "description6": "！"
+  },
+  "CTAButton": {
+    "title": "クイック使用"
+  },
+  "CreditCard": {
+    "title": "クレジットカード生成器",
+    "generate_credit_card_number": "クレジットカード番号を生成"
+  }
+}

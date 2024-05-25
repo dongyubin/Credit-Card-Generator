@@ -1,0 +1,47 @@
+{
+  "Hero": {
+    "title1": "Rápido y Gratis",
+    "title2": "Generador de Tarjetas de Crédito",
+    "title3": "",
+    "description": "La herramienta gratuita definitiva para crear números de tarjetas de crédito de prueba."
+  },
+  "SocialProof": {
+    "maker": "Números de tarjetas de crédito generados"
+  },
+  "Feature": {
+    "title": "Característica"
+  },
+  "Pricing": {
+    "title": "Precios",
+    "title2": "",
+    "description": "El generador de tarjetas de crédito es una característica gratuita.",
+    "doYouLike": "¿Te gusta este generador de tarjetas de crédito?",
+    "follow": "Sígueme en Twitter."
+  },
+  "WallOfLove": {
+    "title": "Muro del Amor",
+    "description1": "Si usaste esta plantilla de página de destino y la recomendaste en Twitter,",
+    "description2": "déjame saber",
+    "description3": " y mostraré tus tweets y recomendaciones aquí."
+  },
+  "FAQ": {
+    "title": "Preguntas Frecuentes",
+    "description": "Aquí están algunas de las preguntas más comunes sobre el generador de tarjetas de crédito."
+  },
+  "CTA": {
+    "title": "Genera Números de Tarjetas de Crédito Ahora",
+    "description1": "Genera",
+    "description2": " tus números de tarjetas de crédito,",
+    "description3": " generación de lotes de",
+    "description4": " tarjetas de crédito,",
+    "description5": " ¡súper rápido",
+    "description6": "!"
+  },
+  "CTAButton": {
+    "title": "Uso Rápido"
+  },
+  "CreditCard": {
+    "title": "Generador de Tarjetas de Crédito",
+    "generate_credit_card_number": "Generar Números de Tarjetas de Crédito"
+  }
+}
