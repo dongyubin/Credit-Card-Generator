@@ -12,7 +12,7 @@ const baseSiteConfig = {
   url: "https://landingpage.weijunext.com",
   ogImage: "https://landingpage.weijunext.com/og.png",
   metadataBase: '/',
-  keywords: ["Credit Card Generator", "landing page template", "awesome landing page", "next.js landing page"],
+  keywords: ["Credit Card Generator"],
   authors: [
     {
       name: "wwkjs666",
