@@ -1,5 +1,20 @@
 export const FAQS_EN = [
   {
+    title: "What are the uses of a Credit Card Generator?",
+    content: `There are many different uses for the Credit Card Generator tool. Some of the most common uses are:
+    Prototyping:
+    A credit card generator can be used to prototype and test various scenarios. For example, if you're a developer working on a new payment system, you can use a credit card generator to test out the system.
+    
+    Sometimes, developers will use real credit card numbers to test their systems. However, this can be risky as it may result in actual charges being made to the card. Using a credit card generator is a much safer way to test payment systems.
+    Education:
+    Credit card generators can also be used for educational purposes. For example, students studying programming or computer science can use a credit card generator to better understand how credit card numbers work.
+    Similarly, students studying mathematical algorithms can use a credit card generator to better understand how the Luhn Algorithm works.
+    Code Development:
+    
+    The Credit Card Generator tool can be used by coders to develop and test various aspects of their code. For example, a coder working on an e-commerce site can use the tool to generate random credit card numbers to test the site's payment processing system.
+    Similarly, a coder working on a new algorithm can use the Credit Card Generator to generate test data. This data can then be used to verify that the algorithm works as intended.`
+  },
+  {
     title: "Can the generated credit card numbers be used for real transactions?",
     content:
       "No, the generated credit card numbers are mainly intended for testing needs and not for real transactions.",
