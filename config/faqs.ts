@@ -1,5 +1,17 @@
 export const FAQS_EN = [
   {
+    title: "What is a Credit Card Generator?",
+    content: `A Credit Card Generator is a tool that generates valid credit card numbers for testing and development purposes in the programming, education, and code development fields.
+
+    It is important to note that these credit card numbers are not real and cannot be used to make actual purchases. They are, however, used for testing payment processing systems or for development purposes.
+
+    Keep in mind: Credit Card Generator does not generate credit card numbers that have real money and doesn't belong to any cardholder. The cardholder's name, address, money, CVV/CVC, expiration date, and PIN are randomly generated.
+
+    If you need a real credit card number for making actual purchases, we recommend that you use a reputable financial institution such as a bank or credit card company and apply for a credit card. does not issue real credit card numbers.
+
+    Before submitting your credit card application, thoroughly explore the best credit card offers, including balance transfer, cashback, and reward programs.`
+  },
+  {
     title: "What are the uses of a Credit Card Generator?",
     content: `There are many different uses for the Credit Card Generator tool. Some of the most common uses are:
     Prototyping:
@@ -42,6 +54,18 @@ export const FAQS_EN = [
 ];
 
 export const FAQS_ZH = [
+  {
+    title: "什么是信用卡生成器？",
+    content: `信用卡生成器是一种工具，用于生成有效的信用卡号码，供编程、教育和代码开发领域的测试和开发使用。
+
+    需要注意的是，这些信用卡号码不是真实的，不能用于实际购买。然而，它们可以用于测试支付处理系统或开发用途。
+
+    请记住：信用卡生成器不会生成具有真实资金的信用卡号码，也不属于任何持卡人。持卡人的姓名、地址、资金、CVV/CVC、安全码、有效期和 PIN 码都是随机生成的。
+
+    如果您需要用于实际购买的真实信用卡号码，我们建议您使用银行或信用卡公司等信誉良好的金融机构并申请信用卡。不发行真实的信用卡号码。
+
+    在提交您的信用卡申请之前，请彻底了解最佳信用卡优惠，包括余额转移、现金返还和奖励计划。`
+  },
   {
     title: "生成的信用卡号码可以用于真实交易吗？",
     content:
