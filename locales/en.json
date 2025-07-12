@@ -1,9 +1,9 @@
 {
   "Hero": {
     "title1": "Fast & Free",
-    "title2": "Credit Card Generator",
+    "title2": "Credit Card Number Generator",
     "title3": "",
-    "description": "The ultimate free tool for creating dummy credit card numbers.Credit Card Generator is an efficient tool for generating dummy credit card numbers for testing needs. It swiftly creates unique credit card numbers, offering convenience for platform testing, service sign-ups, or payment gateway testing cc generator."
+    "description": "The ultimate free tool for creating dummy credit card numbers.Credit Card Number Generator is an efficient tool for generating dummy credit card numbers for testing needs. It swiftly creates unique credit card numbers, offering convenience for platform testing, service sign-ups, or payment gateway testing cc generator.A credit card generator is a software tool or an online service that generates credit card numbers at random. Despite the fact that these created numbers may resemble real credit card numbers, they are not linked to any real bank accounts or financial institutions.Developers or testers can verify the functionality of web pages without using real credit card information by utilizing a credit card number generator, which is a coding-based application that generates random credit card numbers.Credit card number generators use Luhn's technique to produce credit card numbers and details that can be used as test data for creating test scripts of the website. As a way to test the credit card processing systems, people can also use it to generate credit card numbers for online forms."
   },
   "SocialProof": {
     "maker": "Credit card numbers generated"

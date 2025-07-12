@@ -6,13 +6,13 @@ import { SiBuymeacoffee } from "react-icons/si";
 const OPEN_SOURCE_URL = ''
 
 const baseSiteConfig = {
-  name: "Credit Card Generator:The Ultimate Free Online Tool for Creating Dummy Credit Card Numbers",
+  name: "Credit Card Number Generator:The Ultimate Free Online Tool for Creating Dummy Credit Card Numbers",
   description:
-    "Credit Card Generator is your go-to solution for generating dummy credit card numbers swiftly and easily. This tool is indispensable for payment gateway testing, QA, and security testing, thanks to its batch generation feature, user-friendly interface, and lightning-fast performance. With a strong focus on privacy and no need for customization, Credit Card Generator is the perfect choice for all your testing needs.",
+    "Credit Card Number Generator is your go-to solution for generating dummy credit card numbers swiftly and easily. This tool is indispensable for payment gateway testing, QA, and security testing, thanks to its batch generation feature, user-friendly interface, and lightning-fast performance. With a strong focus on privacy and no need for customization, Credit Card Generator is the perfect choice for all your testing needs.",
   url: "https://creditcardgenerator.wangdu.site",
   ogImage: "https://creditcardgenerator.wangdu.site/og.png",
   metadataBase: '/',
-  keywords: ["Credit Card Generator"],
+  keywords: ["Credit Card Number Generator", "Free Credit card number generator"],
   authors: [
     {
       name: "wwkjs666",
