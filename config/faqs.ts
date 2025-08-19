@@ -2,82 +2,82 @@ export const FAQS_EN = [
   {
     title: "What is a Credit Card Generator?",
     content:
-      "A credit-card generator creates fake, structurally-valid card numbers using official IIN ranges and the Luhn checksum. These numbers are safe for testing payment forms, gateway integrations, and fraud-detection logic, but they are not linked to real accounts or funds."
+      "A credit card generator creates fake, structurally-valid card numbers using official IIN ranges and the Luhn checksum. These numbers are safe for testing payment forms, gateway integrations, and fraud-detection logic, but they are not linked to real accounts or funds."
   },
   {
-    title: "Who uses this tool?",
+    title: "Who uses a Credit Card Generator?",
     content:
-      "Software engineers, QA testers, product managers, educators, and security researchers. Typical scenarios include:\n• Payment-gateway sandbox testing\n• Form-validation regression suites\n• Load-test data seeding\n• Classroom demonstrations of the Luhn algorithm"
+      "Software engineers, QA testers, product managers, educators, and security researchers rely on credit card generators. Typical scenarios include:\n• Payment-gateway sandbox testing\n• Form-validation regression suites\n• Load-test data seeding\n• Classroom demonstrations of credit card validation algorithms"
   },
   {
-    title: "Is it legal?",
+    title: "Is using a Credit Card Generator legal?",
     content:
-      "Yes—when used for legitimate development, education, or compliance testing. Any attempt at real-world fraud is illegal and against our terms."
+      "Yes—when used for legitimate development, education, or compliance testing. Credit card generators are legal tools for authorized testing purposes. Any attempt at real-world fraud is illegal and against our terms."
   },
   {
-    title: "Can I use these numbers for real purchases?",
+    title: "Can I use Credit Card Generator numbers for real purchases?",
     content:
-      "No. The numbers will fail issuer-side authorization and cannot be used for actual transactions or subscriptions."
+      "No. Numbers from any credit card generator will fail issuer-side authorization and cannot be used for actual transactions or subscriptions."
   },
   {
-    title: "Do you store the generated data?",
+    title: "Does the Credit Card Generator store my data?",
     content:
-      "No. All generation happens client-side; nothing is sent to our servers, so we have no record of the numbers you create."
+      "No. All generation happens client-side; nothing is sent to servers, so we have no record of the numbers created by the credit card generator."
   },
   {
-    title: "What formats can I export?",
+    title: "What export formats does the Credit Card Generator support?",
     content:
-      "After generation you can download the full set as JSON, CSV, or XML with a single click—ideal for CI pipelines or importing into test databases."
+      "After generating cards, you can download the full set as JSON, CSV, or XML with a single click—ideal for CI pipelines or importing into test databases."
   },
   {
-    title: "How many cards can I generate at once?",
+    title: "How many cards can I generate with the Credit Card Generator?",
     content:
-      "The web UI supports up to 1 000 cards per request. Need more? Loop the export file in your automation script or contact us for an API key."
+      "Our credit card generator UI supports up to 1,000 cards per request. For larger volumes, loop the export file in your automation script."
   },
   {
-    title: "Are CVV and expiry dates included?",
+    title: "Does the Credit Card Generator include CVV and expiry dates?",
     content:
-      "Yes. Each card comes with a randomly generated, format-correct CVV/CVC and a future expiry date to satisfy most validation rules."
+      "Yes. Each card from our credit card generator comes with a randomly generated, format-correct CVV/CVC and a future expiry date."
   },
   {
-    title: "Can I choose a specific BIN or issuer?",
+    title: "Can I customize BIN/issuer with the Credit Card Generator?",
     content:
-      "Absolutely. Use the advanced filter to select any major network (Visa, MasterCard, Amex, Discover, JCB, Diners, UnionPay, RuPay, Maestro) or enter a custom 6-digit BIN."
+      "Absolutely. Use the credit card generator's advanced filter to select any major network or enter a custom 6-digit BIN."
   },
   {
-    title: "What if my test requires real-time card balances?",
+    title: "Can the Credit Card Generator simulate card balances?",
     content:
-      "Generated cards have no backend account, so balances and transaction history are unavailable. For full end-to-end flows, combine our tool with a sandbox payment provider such as Stripe’s test mode."
+      "Generated cards have no backend account. For full end-to-end flows, combine our credit card generator with a sandbox payment provider."
   },
   {
-    title: "Do I need to create an account or sign in?",
+    title: "Do I need an account to use the Credit Card Generator?",
     content:
-      "No login, registration, or API key is required. Open the page and start generating immediately—just like BrowserStack’s free tools section."
+      "No login or registration required. Open the credit card generator page and start creating test cards immediately."
   },
   {
-    title: "Which card networks are supported?",
+    title: "Which card networks does the Credit Card Generator support?",
     content:
-      "Visa, MasterCard, American Express, Discover, JCB, Diners Club International, China UnionPay, RuPay, and Maestro—covering the same range BrowserStack lists for cross-network compatibility testing."
+      "Our credit card generator supports Visa, MasterCard, Amex, Discover, JCB, Diners Club, UnionPay, RuPay, and Maestro—covering all major networks."
   },
   {
-    title: "Can I pick custom expiry dates or CVV rules?",
+    title: "Can I customize expiry dates with the Credit Card Generator?",
     content:
-      "Yes. Use the advanced filters to set a fixed expiry year, a rolling month window, or CVV length rules (3-digit vs 4-digit Amex) so your test data matches exact edge-case scenarios—similar to BrowserStack’s upcoming customizable-card feature."
+      "Yes. Use the credit card generator's advanced filters to set fixed expiry years or rolling month windows."
   },
   {
-    title: "Is this tool completely web-based?",
+    title: "Is the Credit Card Generator web-based?",
     content:
-      "Absolutely. There’s nothing to install, no browser extension, and it works on Windows, macOS, Linux, iOS, and Android browsers—mirroring BrowserStack’s cross-platform approach."
+      "Absolutely. Our credit card generator requires no installation and works on all desktop and mobile browsers."
   },
   {
-    title: "Does the generator include cardholder names and addresses?",
+    title: "Does the Credit Card Generator include cardholder names?",
     content:
-      "Each card is paired with a realistic random name. Full billing addresses are not provided; if you need them for AVS testing, combine our output with any mock-address generator, similar to BrowserStack’s guidance on supplemental test data."
+      "Each card is paired with a realistic random name. For full addresses, combine our credit card generator with a mock-address tool."
   },
   {
-    title: "How can I automate or script these numbers in CI/CD?",
+    title: "How to automate Credit Card Generator in CI/CD?",
     content:
-      "Download the generated set as JSON, CSV, or XML and feed it directly into Postman collections, Cypress fixtures, or GitHub Actions workflows—exactly the same workflow BrowserStack recommends for integrating test-card data into automated pipelines."
+      "Download generated sets as JSON/CSV/XML and feed directly into Postman, Cypress, or GitHub Actions—perfect for automated testing pipelines."
   }
 ];
 
