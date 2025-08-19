@@ -40,8 +40,8 @@ const Header = () => {
         <div className="flex items-center md:gap-x-12">
           <Link
             href="/"
-            aria-label="Credit Card Number Generator"
-            title="Credit Card Number Generator"
+            aria-label="Free Credit Card Generator"
+            title="Free Credit Card Generator"
             className="flex items-center space-x-1 font-bold"
           >
             <Image
@@ -52,7 +52,7 @@ const Header = () => {
               height={32}
             />
             <span className="text-gray-950 dark:text-gray-300 hidden md:block">
-              Credit Card Number Generator
+              Free Credit Card Generator
             </span>
           </Link>
         </div>

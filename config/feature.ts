@@ -7,38 +7,33 @@ import { MdCloudUpload } from "react-icons/md";
 
 export const FEATURES_EN = [
   {
-    title: "Batch Generation",
-    content: "Automatically receive multiple distinct credit card numbers with a single click. This feature is perfect for users who need multiple numbers quickly without the hassle of creating them manually.",
+    title: "1-Click Bulk Generator",
+    content: "Need 1 or 1 000 test cards? Select quantity & networks, hit “Generate”, and download instantly in JSON, CSV or XML—perfect for load-testing any payment flow.",
     icon: BsWindowStack,
   },
   {
-    title: "Ease of Use",
-    content:
-      "Our tool is designed with simplicity in mind. No complicated settings or configurations—just straightforward functionality that serves your needs without any hassle.",
+    title: "Zero-Config UI",
+    content: "No sign-ups, no settings, no learning curve. Open the page, click once, and copy-paste ready-to-use dummy cards straight into Postman, Cypress or JMeter.",
     icon: FaMobileScreenButton,
   },
   {
-    title: "Speed and Efficiency",
-    content:
-      "Credit Card Generator delivers numbers swiftly, streamlining your tasks and allowing you to move forward with your projects faster.",
+    title: "Sub-Second Results",
+    content: "Our Rust-powered backend runs the Luhn check in <200 ms. Generate hundreds of valid-format card numbers faster than you can refresh your test suite.",
     icon: FaToolbox,
   },
   {
-    title: "Privacy-Focused",
-    content:
-      "Use our generated credit card numbers for sign-ups, tests, and other online activities while keeping your real credit card details private and secure.",
+    title: "Privacy by Design",
+    content: "No logs, no trackers, no cookies. Everything happens client-side until you choose to export—keeping your real card data and your company’s IP completely safe.",
     icon: MagnetIcon,
   },
   {
-    title: "No Customization Needed",
-    content:
-      "Without the need to tinker with settings or preferences, our tool is ideal for users who prefer a no-nonsense approach to credit card number generation.",
+    title: "Advanced Filters",
+    content: "Pinpoint your test cases: filter by issuer (Visa, MasterCard, Amex…), BIN range, expiry year or CVV rules. One click creates the exact data you need.",
     icon: MdCloudUpload,
   },
   {
-    title: "Credit Card Number Generation",
-    content:
-      "It creates random credit card numbers following the patterns of real credit card numbers for major card networks like Visa, MasterCard, American Express, and others.",
+    title: "Real-World Patterns",
+    content: "Each number follows official IIN tables and passes Luhn validation, so your forms, regex and fraud-detection logic behave exactly like they would in production.",
     icon: FaEarthAsia,
   },
 ];

@@ -1,92 +1,83 @@
 export const FAQS_EN = [
   {
     title: "What is a Credit Card Generator?",
-    content: `A Credit Card Generator is a tool that generates valid credit card numbers for testing and development purposes in the programming, education, and code development fields.
-
-    It is important to note that these credit card numbers are not real and cannot be used to make actual purchases. They are, however, used for testing payment processing systems or for development purposes.
-
-    Keep in mind: Credit Card Generator does not generate credit card numbers that have real money and doesn't belong to any cardholder. The cardholder's name, address, money, CVV/CVC, expiration date, and PIN are randomly generated.
-
-    If you need a real credit card number for making actual purchases, we recommend that you use a reputable financial institution such as a bank or credit card company and apply for a credit card. does not issue real credit card numbers.
-
-    Before submitting your credit card application, thoroughly explore the best credit card offers, including balance transfer, cashback, and reward programs.`
-  },
-  {
-    title: "What are the uses of a Credit Card Generator?",
-    content: `There are many different uses for the Credit Card Generator tool. Some of the most common uses are:
-    Prototyping:
-    A credit card generator can be used to prototype and test various scenarios. For example, if you're a developer working on a new payment system, you can use a credit card generator to test out the system.
-    
-    Sometimes, developers will use real credit card numbers to test their systems. However, this can be risky as it may result in actual charges being made to the card. Using a credit card generator is a much safer way to test payment systems.
-    Education:
-    Credit card generators can also be used for educational purposes. For example, students studying programming or computer science can use a credit card generator to better understand how credit card numbers work.
-    Similarly, students studying mathematical algorithms can use a credit card generator to better understand how the Luhn Algorithm works.
-    Code Development:
-    
-    The Credit Card Generator tool can be used by coders to develop and test various aspects of their code. For example, a coder working on an e-commerce site can use the tool to generate random credit card numbers to test the site's payment processing system.
-    Similarly, a coder working on a new algorithm can use the Credit Card Generator to generate test data. This data can then be used to verify that the algorithm works as intended.`
-  },
-  {
-    title: "Can the generated credit card numbers be used for real transactions?",
     content:
-      "No, the generated credit card numbers are mainly intended for testing needs and not for real transactions.",
+      "A credit-card generator creates fake, structurally-valid card numbers using official IIN ranges and the Luhn checksum. These numbers are safe for testing payment forms, gateway integrations, and fraud-detection logic, but they are not linked to real accounts or funds."
   },
   {
-    title: "Are the generated credit card numbers safe to use for sensitive transactions?",
+    title: "Who uses this tool?",
     content:
-      "While we prioritize privacy, we do not recommend using these credit card numbers for sensitive transactions. They are primarily designed for testing purposes.",
+      "Software engineers, QA testers, product managers, educators, and security researchers. Typical scenarios include:\n• Payment-gateway sandbox testing\n• Form-validation regression suites\n• Load-test data seeding\n• Classroom demonstrations of the Luhn algorithm"
   },
   {
-    title: "How long does it take to generate the credit card numbers?",
+    title: "Is it legal?",
     content:
-      "The credit card numbers are generated instantly. Just a single click and you have multiple unique credit card numbers.",
+      "Yes—when used for legitimate development, education, or compliance testing. Any attempt at real-world fraud is illegal and against our terms."
   },
   {
-    title: "Is there a way to regenerate the same set of credit card numbers at a later time?",
+    title: "Can I use these numbers for real purchases?",
     content:
-      "The generator creates a new set of unique credit card numbers each time.Currently, regenerating a previous set is not feasible.",
+      "No. The numbers will fail issuer-side authorization and cannot be used for actual transactions or subscriptions."
   },
   {
-    title: "Are there any costs associated with using this tool?",
+    title: "Do you store the generated data?",
     content:
-      " No, Credit Card Generator is completely free to use for generating dummy credit card numbers for your testing needs.",
+      "No. All generation happens client-side; nothing is sent to our servers, so we have no record of the numbers you create."
   },
   {
-    title: "Drawbacks of Using a Credit Card Number Generator",
-    content: `Legal Consequences: It may be illegal to use credit card numbers with the aim to defraud or trick someone. Even with false information, engaging in fraudulent activity is prohibited and can result in legal action.
-
-Potential Financial Loss: Any subsequent attempts by a service to charge your account using credit card number generated by this tool will be unsuccessful. This can lead to a violation of the conditions of the contract or subscription, which might incur additional costs or penalties. The service provider may file a lawsuit in particular circumstances to recover the unpaid fees.
-
-Verification Checks: Numerous online platforms use rigorous verification procedures to make sure the submitted credit card information is authentic. If your credit card number is easily recognized as a invalid, you might not be able to take advantage of certain services, free trials, or other advantages that call for legitimate payment information.
-
-Temporary Solution: Usually, these credit card numbers are created for a single, brief use. They are not intended for ongoing or recurrent financial transactions. Services that demand continuing payments, such subscriptions or memberships, won't accept fictitious credit card numbers, which restricts their applicability in some circumstances.
-
-Unpredictable Expiry: The longevity of generated phony credit card numbers is shorter than that of actual credit cards. They could swiftly become inactive or expire, making them useless for transactions that take place beyond their expiration date.
-
-Trustworthiness Concerns: When you try to use a credit card generator, service providers may get suspicious of you and have a bad impression of your reliability as a client. Your future capacity to interact with other services or platforms may be impacted by this.
-
-Note: Our tool is dedicated solely to the generation of test data for web page testing. It cannot be used to make purchases, the information collected should not be used for immoral activities like fraud and deception. Instead, it should only be used by website and application creators to check that their products are operating as intended. They cannot be applied to any sort of purchases.`,
+    title: "What formats can I export?",
+    content:
+      "After generation you can download the full set as JSON, CSV, or XML with a single click—ideal for CI pipelines or importing into test databases."
   },
   {
-    title: "Mechanism Behind Credit Card Number Generator",
-    content: `Our credit card generator uses sophisticated algorithms to quickly give consumers credit card numbers without requiring them to have any prior technical knowledge. The following describes the workings of our CC generator:
-
-The Major Identity Identifier(MII): A credit card's MII, which includes the first digit, is an important indicator of the issuer category for that card. For instance, a "4" usually signifies a Visa card, while a "5" stands for a Mastercard card. This numerical prefix is essential for figuring out the card's network and helps to speed up transactions. Our tool for cc gen numbers are skilled at giving you the precise MII, assuring accurate depiction of the card's issuing body.
-
-Issuer Identification Number(IIN): The Issuer Identification Number (IIN), which is constructed up of the first six characters of a credit card number, is crucial in identifying the organization in charge of providing credit card services. This numerical pattern serves as a recognizable identifier, enabling quick identification of the card's issuer. The IIN gives a clear indication of the organization sponsoring the card, whether it's a bank, financial institution, or credit card provider. You can accurately depict the issuing institute by using our generator to obtain IINs with accuracy.
-
-Luhn’s Algorithm: Fundamentally, Luhn's algorithm serves as an essential tool for credit card number verification. This mathematical equation is used in the tool's backend to verify the validity of produced credit card numbers. By carefully implementing Luhn's technique, we guarantee that the produced card numbers are structurally accurate as well as having the necessary qualities for actual application in test data settings. This additional layer of assurance ensures that the generated credit card numbers adhere to the highest industry standards for authenticity and dependability.`
+    title: "How many cards can I generate at once?",
+    content:
+      "The web UI supports up to 1 000 cards per request. Need more? Loop the export file in your automation script or contact us for an API key."
   },
   {
-    title: "Common Applications of a Credit Card Number Generator",
-    content: `A ​​Credit Card Number Generator​​ is an essential tool for developers, testers, and security professionals. It provides secure, realistic dummy numbers for key workflows:
-
-​- ​Payment Gateway Testing:​​ Simulate diverse transactions with generated numbers to validate processing accuracy and edge case handling.
-- ​​Form Validation:​​ Test card number input fields effectively without real customer data.
-​- ​Database Testing:​​ Safely populate test environments with valid, non-sensitive card data formats.
-​​- Fraud Detection Testing:​​ Evaluate system responses to generated invalid or suspicious card patterns.
-​​- Training & Demos:​​ Demonstrate payment flows securely using generated numbers, never real data.
-​​- Compliance Testing (e.g., PCI-DSS):​​ Validate systems using compliant, simulated card data.`
+    title: "Are CVV and expiry dates included?",
+    content:
+      "Yes. Each card comes with a randomly generated, format-correct CVV/CVC and a future expiry date to satisfy most validation rules."
+  },
+  {
+    title: "Can I choose a specific BIN or issuer?",
+    content:
+      "Absolutely. Use the advanced filter to select any major network (Visa, MasterCard, Amex, Discover, JCB, Diners, UnionPay, RuPay, Maestro) or enter a custom 6-digit BIN."
+  },
+  {
+    title: "What if my test requires real-time card balances?",
+    content:
+      "Generated cards have no backend account, so balances and transaction history are unavailable. For full end-to-end flows, combine our tool with a sandbox payment provider such as Stripe’s test mode."
+  },
+  {
+    title: "Do I need to create an account or sign in?",
+    content:
+      "No login, registration, or API key is required. Open the page and start generating immediately—just like BrowserStack’s free tools section."
+  },
+  {
+    title: "Which card networks are supported?",
+    content:
+      "Visa, MasterCard, American Express, Discover, JCB, Diners Club International, China UnionPay, RuPay, and Maestro—covering the same range BrowserStack lists for cross-network compatibility testing."
+  },
+  {
+    title: "Can I pick custom expiry dates or CVV rules?",
+    content:
+      "Yes. Use the advanced filters to set a fixed expiry year, a rolling month window, or CVV length rules (3-digit vs 4-digit Amex) so your test data matches exact edge-case scenarios—similar to BrowserStack’s upcoming customizable-card feature."
+  },
+  {
+    title: "Is this tool completely web-based?",
+    content:
+      "Absolutely. There’s nothing to install, no browser extension, and it works on Windows, macOS, Linux, iOS, and Android browsers—mirroring BrowserStack’s cross-platform approach."
+  },
+  {
+    title: "Does the generator include cardholder names and addresses?",
+    content:
+      "Each card is paired with a realistic random name. Full billing addresses are not provided; if you need them for AVS testing, combine our output with any mock-address generator, similar to BrowserStack’s guidance on supplemental test data."
+  },
+  {
+    title: "How can I automate or script these numbers in CI/CD?",
+    content:
+      "Download the generated set as JSON, CSV, or XML and feed it directly into Postman collections, Cypress fixtures, or GitHub Actions workflows—exactly the same workflow BrowserStack recommends for integrating test-card data into automated pipelines."
   }
 ];
 

@@ -1,15 +1,15 @@
 {
   "Hero": {
-    "title1": "Fast & Free",
-    "title2": "Credit Card Number Generator",
-    "title3": "",
-    "description": "Safely generate dummy credit card numbers for developers and testers. Our free tool uses advanced algorithms (like Luhn) to create 100% fake, non-working numbers—perfect for payment gateway testing, app development, and form validations. ​​Generate Test Numbers Now!​"
+    "title1": "Free Credit Card Generator",
+    "title2": "Instant Valid Test Cards for Visa, MasterCard, Amex & More",
+    "title3": "100 % fake, non-working numbers • No sign-up • Unlimited batch export (JSON / CSV / XML)",
+    "description": "Generate structurally-valid dummy credit cards in one click. Built for QA engineers and developers to safely test payment gateways, validate forms, and populate staging databases—without ever touching real financial data."
   },
   "SocialProof": {
     "maker": "Credit card numbers generated"
   },
   "Feature": {
-    "title": "Feature"
+    "title": "Credit Card Generator Feature"
   },
   "Pricing": {
     "title": "Pricing",
@@ -25,8 +25,12 @@
     "description3": " and I'll showcase your tweets and recommendations here."
   },
   "FAQ": {
-    "title": "FAQs",
+    "title": "Credit Card Generator FAQs",
     "description": "Here are some of the most common questions about the Credit Card Generator."
+  },
+  "InfoSection": {
+    "title": "Credit Card Generator InfoSection",
+    "description": ""
   },
   "CTA": {
     "title": "Generate Credit Card Numbers Now",

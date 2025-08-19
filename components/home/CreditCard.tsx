@@ -8,8 +8,47 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { unparse } from 'papaparse';
 import { useEffect, useState } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
+import { create } from 'xmlbuilder2';
+
+const downloadBlob = (blob: Blob, filename: string) => {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+};
+
+const exportJSON = (data: any[]) => {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  downloadBlob(blob, 'test-cards.json');
+};
+
+const exportCSV = (data: any[]) => {
+  const csv = unparse(data);
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  downloadBlob(blob, 'test-cards.csv');
+};
+
+const exportXML = (data: any[]) => {
+  const root = create({ version: '1.0' })
+    .ele('cards')
+    .att('generated', new Date().toISOString());
+  data.forEach((c, i) => {
+    root.ele('card', { id: i + 1 })
+      .ele('number').txt(c.number).up()
+      .ele('name').txt(c.name).up()
+      .ele('expiry').txt(c.expiryDate).up()
+      .ele('cvv').txt(c.ccv).up()
+      .ele('type').txt(c.type).up();
+  });
+  const xml = root.end({ prettyPrint: true });
+  const blob = new Blob([xml], { type: 'application/xml' });
+  downloadBlob(blob, 'test-cards.xml');
+};
 
 const cardPrefixes: { [key: string]: string } = {
   'Visa': '4',
@@ -128,41 +167,54 @@ const CreditCard = ({ id, locale }: { id: string; locale: any; }) => {
           {locale.generate_credit_card_number}
         </Button>
         {creditCardDetails.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-            {creditCardDetails.map((detail, index) => (
-              <div key={index} className="relative bg-gradient-to-r from-purple-500 to-indigo-500 p-6 rounded-lg shadow-xl text-left text-white">
-                <div className="absolute top-2 right-2 text-xs text-gray-200">{detail.type}</div>
-                <div
-                  className="mb-2 cursor-pointer"
-                  onClick={() => copyToClipboard(detail.number)}
-                  title="Click to copy"
-                >
-                  <p className="font-mono text-lg">Card Number: {detail.number}</p>
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+              {creditCardDetails.map((detail, index) => (
+                <div key={index} className="relative bg-gradient-to-r from-purple-500 to-indigo-500 p-6 rounded-lg shadow-xl text-left text-white">
+                  <div className="absolute top-2 right-2 text-xs text-gray-200">{detail.type}</div>
+                  <div
+                    className="mb-2 cursor-pointer"
+                    onClick={() => copyToClipboard(detail.number)}
+                    title="Click to copy"
+                  >
+                    <p className="font-mono text-lg">Card Number: {detail.number}</p>
+                  </div>
+                  <div
+                    className="mb-2 cursor-pointer"
+                    onClick={() => copyToClipboard(detail.name)}
+                    title="Click to copy"
+                  >
+                    <p className="font-mono text-lg">Name: {detail.name}</p>
+                  </div>
+                  <div
+                    className="mb-2 cursor-pointer"
+                    onClick={() => copyToClipboard(detail.expiryDate)}
+                    title="Click to copy"
+                  >
+                    <p className="font-mono text-lg">Good Thru: {detail.expiryDate}</p>
+                  </div>
+                  <div
+                    className="cursor-pointer"
+                    onClick={() => copyToClipboard(detail.ccv)}
+                    title="Click to copy"
+                  >
+                    <p className="font-mono text-lg">CVV/CVV2: {detail.ccv}</p>
+                  </div>
                 </div>
-                <div
-                  className="mb-2 cursor-pointer"
-                  onClick={() => copyToClipboard(detail.name)}
-                  title="Click to copy"
-                >
-                  <p className="font-mono text-lg">Name: {detail.name}</p>
-                </div>
-                <div
-                  className="mb-2 cursor-pointer"
-                  onClick={() => copyToClipboard(detail.expiryDate)}
-                  title="Click to copy"
-                >
-                  <p className="font-mono text-lg">Good Thru: {detail.expiryDate}</p>
-                </div>
-                <div
-                  className="cursor-pointer"
-                  onClick={() => copyToClipboard(detail.ccv)}
-                  title="Click to copy"
-                >
-                  <p className="font-mono text-lg">CVV/CVV2: {detail.ccv}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+            <div className="flex flex-wrap justify-center gap-2 mt-6">
+              <Button onClick={() => exportJSON(creditCardDetails)} variant="outline">
+                Export JSON
+              </Button>
+              <Button onClick={() => exportCSV(creditCardDetails)} variant="outline">
+                Export CSV
+              </Button>
+              <Button onClick={() => exportXML(creditCardDetails)} variant="outline">
+                Export XML
+              </Button>
+            </div>
+          </>
         )}
       </div>
     </section>
