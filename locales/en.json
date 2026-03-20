@@ -1,15 +1,15 @@
 {
   "Hero": {
-    "title1": "Free Credit Card Generator",
+    "title1": "Free Fake Credit Card Generator",
     "title2": "Instant Valid Test Cards for Visa, MasterCard, Amex & More",
-    "title3": "100 % fake, non-working numbers • No sign-up • Unlimited batch export (JSON / CSV / XML)",
-    "description": "Generate structurally-valid dummy credit cards in one click. Built for QA engineers and developers to safely test payment gateways, validate forms, and populate staging databases—without ever touching real financial data."
+    "title3": "100% Fake, Non-Working Numbers • No Registration • Unlimited Batch Export (JSON / CSV / XML)",
+    "description": "Generate structurally-valid fake credit cards instantly. Built for developers and testers to safely test payment gateways, validate forms, and populate staging databases—without using real financial data. Your go-to credit card number generator for all testing needs."
   },
   "SocialProof": {
-    "maker": "Credit card numbers generated"
+    "maker": "Fake credit card numbers generated for testing"
   },
   "Feature": {
-    "title": "Credit Card Generator Feature"
+    "title": "Fake Credit Card Generator Features"
   },
   "Pricing": {
     "title": "Pricing",
@@ -33,19 +33,31 @@
     "description": ""
   },
   "CTA": {
-    "title": "Generate Credit Card Numbers Now",
+    "title": "Generate Fake Credit Card Numbers Now",
     "description1": "Generate",
-    "description2": " your credit card numbers,",
+    "description2": " your fake credit card numbers,",
     "description3": " batch generation of",
-    "description4": " credit cards,",
+    "description4": " test credit cards,",
     "description5": " lightning fast",
     "description6": "!"
   },
   "CTAButton": {
-    "title": "Quick Use"
+    "title": "Generate Now"
   },
   "CreditCard": {
-    "title": "Credit Card Generator",
-    "generate_credit_card_number": "Generate Credit Card Numbers"
+    "title": "Fake Credit Card Generator",
+    "generate_credit_card_number": "Generate Fake Credit Card Numbers",
+    "card_network_label": "Card Network",
+    "quantity_label": "Number of Cards",
+    "generate_button": "Generate Fake Credit Card Numbers",
+    "copy_tooltip": "Click to copy",
+    "export_json": "Export JSON",
+    "export_csv": "Export CSV",
+    "export_xml": "Export XML",
+    "test_card_title": "Test Cards",
+    "test_card_description": "Official test numbers from Stripe, PayPal & Braintree for testing purposes:",
+    "stripe_cards": "Stripe Test Cards",
+    "paypal_cards": "PayPal Test Cards",
+    "braintree_cards": "Braintree Test Cards"
   }
 }

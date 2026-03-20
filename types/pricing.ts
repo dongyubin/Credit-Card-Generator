@@ -1,5 +1,3 @@
-import type { ButtonProps } from "@nextui-org/react";
-
 export enum FrequencyEnum {
   Yearly = "yearly",
   Quarterly = "quarterly",
@@ -29,6 +27,6 @@ export type Tier = {
   featured?: boolean;
   features?: string[];
   buttonText: string;
-  buttonColor?: ButtonProps["color"];
-  buttonVariant: ButtonProps["variant"];
+  buttonColor?: "default" | "primary" | "secondary" | "success" | "warning" | "danger";
+  buttonVariant?: "default" | "solid" | "bordered" | "light" | "flat" | "ghost" | "outline" | "destructive" | "link";
 };

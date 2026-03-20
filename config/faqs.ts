@@ -1,13 +1,13 @@
 export const FAQS_EN = [
   {
-    title: "What is a Credit Card Generator?",
+    title: "What is a Fake Credit Card Generator?",
     content:
-      "A credit card generator creates fake, structurally-valid card numbers using official IIN ranges and the Luhn checksum. These numbers are safe for testing payment forms, gateway integrations, and fraud-detection logic, but they are not linked to real accounts or funds."
+      "A fake credit card generator creates structurally-valid dummy credit card numbers using official IIN ranges and the Luhn algorithm. These numbers are specifically designed for testing payment systems, form validation, and development purposes. They're completely fake and cannot be used for real transactions."
   },
   {
-    title: "Who uses a Credit Card Generator?",
+    title: "Who uses a Fake Credit Card Generator?",
     content:
-      "Software engineers, QA testers, product managers, educators, and security researchers rely on credit card generators. Typical scenarios include:\n• Payment-gateway sandbox testing\n• Form-validation regression suites\n• Load-test data seeding\n• Classroom demonstrations of credit card validation algorithms"
+      "Our fake credit card generator is used by:\n• Software engineers testing payment integrations\n• QA testers creating regression test suites\n• Product managers building mock payment flows\n• Educators demonstrating payment system concepts\n• Security researchers testing fraud detection\n• Developers loading test databases with realistic data"
   },
   {
     title: "Is using a Credit Card Generator legal?",
@@ -35,14 +35,14 @@ export const FAQS_EN = [
       "Our credit card generator UI supports up to 1,000 cards per request. For larger volumes, loop the export file in your automation script."
   },
   {
-    title: "Does the Credit Card Generator include CVV and expiry dates?",
+    title: "Does the Fake Credit Card Generator include CVV and expiry dates?",
     content:
-      "Yes. Each card from our credit card generator comes with a randomly generated, format-correct CVV/CVC and a future expiry date."
+      "Yes. Every fake credit card generated includes a realistic CVV/CVC code and a future expiry date that follows the proper format. This makes them perfect for end-to-end payment testing scenarios."
   },
   {
-    title: "Can I customize BIN/issuer with the Credit Card Generator?",
+    title: "Can I customize BIN ranges with the Fake Credit Card Generator?",
     content:
-      "Absolutely. Use the credit card generator's advanced filter to select any major network or enter a custom 6-digit BIN."
+      "Yes. Our fake credit card generator allows you to select specific card networks (Visa, Mastercard, Amex, etc.) and supports custom BIN ranges for specialized testing scenarios. This helps you test specific issuer validation rules."
   },
   {
     title: "Can the Credit Card Generator simulate card balances?",
@@ -83,16 +83,8 @@ export const FAQS_EN = [
 
 export const FAQS_ZH = [
   {
-    title: "什么是信用卡生成器？",
-    content: `信用卡生成器是一种工具，用于生成有效的信用卡号码，供编程、教育和代码开发领域的测试和开发使用。
-
-    需要注意的是，这些信用卡号码不是真实的，不能用于实际购买。然而，它们可以用于测试支付处理系统或开发用途。
-
-    请记住：信用卡生成器不会生成具有真实资金的信用卡号码，也不属于任何持卡人。持卡人的姓名、地址、资金、CVV/CVC、安全码、有效期和 PIN 码都是随机生成的。
-
-    如果您需要用于实际购买的真实信用卡号码，我们建议您使用银行或信用卡公司等信誉良好的金融机构并申请信用卡。不发行真实的信用卡号码。
-
-    在提交您的信用卡申请之前，请彻底了解最佳信用卡优惠，包括余额转移、现金返还和奖励计划。`
+    title: "什么是伪造信用卡生成器？",
+    content: `伪造信用卡生成器是一种工具，用于生成结构有效的虚拟信用卡号码，专为测试和开发目的设计。这些号码完全伪造，专门用于测试支付系统、表单验证和开发场景，不能用于真实交易。`
   },
   {
     title: "生成的信用卡号码可以用于真实交易吗？",

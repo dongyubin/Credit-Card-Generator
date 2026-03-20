@@ -8,10 +8,10 @@ const InfoSection = ({
   langName,
 }: {
   id: string;
-  locale: any;
+  locale?: any;
   langName: string;
 }) => {
-  const STEPS = ALL_INFO_SECTIONS[`HOW_IT_WORKS_${langName.toUpperCase()}`];
+  const STEPS = ALL_INFO_SECTIONS[`HOW_IT_WORKS_${langName.toUpperCase()}`] || [];
 
   /* 处理加粗文本和换行 */
   const renderContent = (text: string) => {
@@ -36,11 +36,10 @@ const InfoSection = ({
       {/* 头部 */}
       <div className="flex flex-col text-center gap-4 mb-10">
         <h2 className="text-3xl md:text-4xl font-bold">
-          {locale.title || "How the Credit Card Generator Works"}
+          {locale?.title || "How the Credit Card Generator Works"}
         </h2>
         <p className="text-lg text-default-500">
-          {locale.description ||
-            "Follow these simple steps to create realistic test cards in seconds."}
+          {locale?.description || "Follow these simple steps to create realistic test cards in seconds."}
         </p>
       </div>
 

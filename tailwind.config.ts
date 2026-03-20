@@ -1,4 +1,3 @@
-import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -75,11 +74,11 @@ const config = {
         },
         "scrolling-banner": {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(calc(-50% - var(--gap)/2))" },
+          to: { transform: "translateX(calc(-50% - var(--scroll-gap)/2))" },
         },
         "scrolling-banner-vertical": {
           from: { transform: "translateY(0)" },
-          to: { transform: "translateY(calc(-50% - var(--gap)/2))" },
+          to: { transform: "translateY(calc(-50% - var(--scroll-gap)/2))" },
         },
       },
       animation: {
@@ -90,7 +89,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), nextui()],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config
 
 export default config

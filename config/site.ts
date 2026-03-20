@@ -6,13 +6,24 @@ import { SiBuymeacoffee } from "react-icons/si";
 const OPEN_SOURCE_URL = ''
 
 const baseSiteConfig = {
-  name: "Credit Card Generator – Free Visa, MC & Amex Test Numbers | Instant Batch",
+  name: "Fake Credit Card Generator - Generate Valid Test Cards | Free Visa, MC, Amex Numbers",
   description:
-    "Need test card numbers? Generate 100% fake Visa, MasterCard, Amex in bulk—free, no sign-up, JSON/CSV export. Perfect for gateway & form testing.",
+    "Free fake credit card generator for testing. Generate valid Visa, Mastercard, Amex test numbers instantly. Perfect for developers, QA testers, and payment integration. No registration required. Batch export in JSON/CSV/XML.",
   url: "https://creditcardgenerator.wangdu.site",
   ogImage: "https://creditcardgenerator.wangdu.site/og.png",
   metadataBase: '/',
-  keywords: ["Credit Card Number Generator", "Free Credit card number generator"],
+  keywords: [
+    "fake credit card generator",
+    "credit card number generator",
+    "credit card generator credit card generator",
+    "smile generation credit card",
+    "fake credit card number generator",
+    "free credit card generator",
+    "test credit card numbers",
+    "visa test card",
+    "mastercard test card",
+    "amex test card"
+  ],
   authors: [
     {
       name: "wwkjs666",

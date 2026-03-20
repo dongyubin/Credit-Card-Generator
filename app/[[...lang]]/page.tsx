@@ -5,6 +5,7 @@ import Feature from "@/components/home/Feature";
 import Hero from "@/components/home/Hero";
 import InfoSection from "@/components/home/InfoSection";
 import SocialProof from "@/components/home/SocialProof";
+import TestCardsSection from "@/components/home/TestCardsSection";
 import { defaultLocale, getDictionary } from "@/lib/i18n";
 
 export default async function LangHome({
@@ -27,6 +28,10 @@ export default async function LangHome({
       {/* <ScrollingLogos /> */}
 
       <CreditCard id="CreditCard" locale={dict.CreditCard} />
+
+      {/* Test Cards Section */}
+      <TestCardsSection locale={dict.CreditCard} />
+
       {/* USP (Unique Selling Proposition) */}
       <Feature id="Features" locale={dict.Feature} langName={langName} />
 
@@ -34,10 +39,10 @@ export default async function LangHome({
 
 
       {/* Pricing */}
-      {/* <Pricing id="Pricing" locale={dict.Pricing} langName={langName} /> */}
+      {/* <Pricing id="Pricing" locale={dict.Pricing} langName={langName} */}
 
       {/* Testimonials / Wall of Love */}
-      {/* <WallOfLove id="WallOfLove" locale={dict.WallOfLove} /> */}
+      {/* <WallOfLove id="WallOfLove" locale={dict.WallOfLove} */}
 
       {/* FAQ (Frequently Asked Questions) */}
       <FAQ id="FAQ" locale={dict.FAQ} langName={langName} />
