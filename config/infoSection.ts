@@ -61,7 +61,34 @@ interface InfoSectionCollection {
   }[];
 }
 
+export const HOW_IT_WORKS_ZH = [
+  {
+    title: "什么是信用卡生成器？",
+    content:
+      "信用卡生成器是一种在线工具，通过遵循官方发行人识别号（IIN）表格和Luhn校验和算法生成**外观有效但完全虚假**的卡号。这些虚拟号码对于需要测试**支付网关**、**结账表单**和**欺诈检测规则**的开发人员和QA团队必不可少。它们**不关联真实账户**，**没有货币价值**，**不能用于实际购买**。"
+  },
+  {
+    title: "如何使用信用卡生成器创建测试信用卡号？",
+    content:
+      "使用我们的信用卡生成器是一个四步过程：\n\n1. **选择数量** – 一次性生成一到一千张卡片。\n2. **选择网络** – 选择Visa、MasterCard、American Express、Discover、JCB、中国银联、大莱国际、RuPay或Maestro。\n3. **选择输出格式** – 下载JSON、CSV或XML格式的数据，直接导入Postman、Cypress、JMeter或任何CI流水线。\n4. **点击生成** – 工具立即创建具有真实卡号、随机CVV和未来到期日的卡片。无需注册、无需成本、无需安装。"
+  },
+  {
+    title: "谁需要信用卡生成器？",
+    content:
+      "• **软件工程师**验证新的支付集成  \n• **QA测试人员**构建结账流程的回归测试套件  \n• **安全研究人员**模拟欺诈模式  \n• **教育工作者**教授Luhn算法或PCI-DSS概念  \n• **产品经理**运行实时演示而不暴露真实持卡人数据"
+  }
+];
+
+export const HOW_IT_WORKS_JA = [
+  {
+    title: "クレジットカード生成器とは何ですか？",
+    content:
+      "クレジットカード生成器は、公式発行元識別番号（IIN）テーブルとLuhnチェックサムアルゴリズムに従って**有効に見えるが完全に偽の**カード番号を生成するオンラインツールです。これらのダミー番号は、**決済ゲートウェイ**、**チェックアウトフォーム**、**詐欺検出ルール**をテストする必要がある開発者とQAチームに不可欠です。彼らは**ライブアカウントにリンクされておらず**、**金銭的価値がなく**、**実際の購入には使用できません**。"
+  }
+];
+
 export const ALL_INFO_SECTIONS: InfoSectionCollection = {
   HOW_IT_WORKS_EN,
-  // Add other languages here
+  HOW_IT_WORKS_ZH,
+  HOW_IT_WORKS_JA,
 };

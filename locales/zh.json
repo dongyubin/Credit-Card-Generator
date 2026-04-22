@@ -1,15 +1,15 @@
 {
   "Hero": {
-    "title1": "快速免费",
-    "title2": "信用卡生成器",
+    "title1": "免费",
+    "title2": "伪造信用卡生成器",
     "title3": "",
-    "description": "为开发人员和测试人员安全地生成虚拟信用卡号。我们的免费工具使用先进的算法（如Luhn）创建100%的虚假、非工作数字，非常适合支付网关测试、应用程序开发和表单验证。 ​​立即生成测试编号！"
+    "description": "即时生成有效的测试信用卡号码。专为开发者和测试人员设计，用于安全地测试支付网关、验证表单和填充暂存数据库—无需使用真实金融数据。您的信用卡号码生成器的首选解决方案。"
   },
   "SocialProof": {
-    "maker": "信用卡号码已生成"
+    "maker": "为测试生成的伪造信用卡号码"
   },
   "Feature": {
-    "title": "Credit Card Generator Feature"
+    "title": "伪造信用卡生成器功能"
   },
   "Pricing": {
     "title": "定价",
@@ -28,20 +28,40 @@
     "title": "Credit Card Generator FAQs",
     "description": "这里有一些最常见的信用卡生成器问题。"
   },
+  "InfoSection": {
+    "title": "信用卡生成器工作原理",
+    "description": ""
+  },
   "CTA": {
-    "title": "立即生成信用卡号",
+    "title": "立即生成伪造的信用卡号码",
     "description1": "生成",
-    "description2": "你的信用卡号，",
+    "description2": "你的伪造信用卡号码，",
     "description3": "批量生成",
-    "description4": "信用卡，",
+    "description4": "测试信用卡，",
     "description5": "闪电般快速",
     "description6": "！"
   },
   "CTAButton": {
-    "title": "快速使用"
+    "title": "立即生成"
   },
   "CreditCard": {
-    "title": "信用卡生成器",
-    "generate_credit_card_number": "生成信用卡号码"
+    "title": "伪造信用卡生成器",
+    "generate_credit_card_number": "生成伪造的信用卡号码",
+    "card_network_label": "卡网络",
+    "quantity_label": "卡片数量",
+    "generate_button": "生成伪造的信用卡号码",
+    "copy_tooltip": "点击复制",
+    "export_json": "导出 JSON",
+    "export_csv": "导出 CSV",
+    "export_xml": "导出 XML",
+    "test_card_title": "测试卡号",
+    "test_card_description": "来自 Stripe、PayPal 和 Braintree 的官方测试卡号：",
+    "test_card_notice": "这些是支付服务商提供的官方测试卡，不能用于真实交易。",
+    "test_card_copy_button": "复制",
+    "test_card_copied_button": "已复制",
+    "stripe_docs_label": "Stripe 文档",
+    "stripe_cards": "Stripe 测试卡",
+    "paypal_cards": "PayPal 测试卡",
+    "braintree_cards": "Braintree 测试卡"
   }
 }

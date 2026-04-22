@@ -18,6 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        solid: "bg-blue-600 text-white hover:bg-blue-700",
+        bordered: "border border-gray-300 bg-transparent hover:bg-gray-50 hover:text-gray-900 dark:border-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-100",
+        light: "bg-transparent text-gray-900 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-100",
+        flat: "bg-transparent text-gray-900 hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-800",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -25,26 +29,43 @@ const buttonVariants = cva(
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
       },
+      color: {
+        primary: "bg-blue-600 text-white hover:bg-blue-700",
+        secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600",
+        success: "bg-green-600 text-white hover:bg-green-700",
+        warning: "bg-yellow-500 text-white hover:bg-yellow-600",
+        danger: "bg-red-600 text-white hover:bg-red-700",
+        default: "bg-gray-100 text-gray-900 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700",
+      },
     },
     defaultVariants: {
       variant: "default",
       size: "default",
+      color: "primary",
     },
   }
 )
 
 export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "color"> {
   asChild?: boolean
+  fullWidth?: boolean
+  as?: React.ElementType
+  children?: React.ReactNode
+  variant?: VariantProps<typeof buttonVariants>["variant"]
+  size?: VariantProps<typeof buttonVariants>["size"]
+  color?: VariantProps<typeof buttonVariants>["color"]
 }
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button"
+const Button = React.forwardRef<any, ButtonProps>(
+  ({ className, variant, size, color, fullWidth, asChild = false, as: As = "button", ...props }, ref) => {
+    const Comp = asChild ? Slot : As
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={cn(
+          buttonVariants({ variant, size, color, className }),
+          fullWidth && "w-full"
+        )}
         ref={ref}
         {...props}
       />

@@ -1,6 +1,6 @@
 "use client";
 import { ALL_FAQS } from "@/config/faqs";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import * as Accordion from "@radix-ui/react-accordion";
 import { MinusIcon, PlusIcon } from "lucide-react";
 
 // update rough notation highlight
@@ -33,35 +33,33 @@ const FAQ = ({
           {locale.description}
         </p>
       </div>
-      <Accordion
-        fullWidth
-        keepContentMounted
-        className="gap-4 w-full max-w-4xl"
-        itemClasses={{
-          base: "px-4 md:px-6 !bg-default-100 !shadow-none hover:!bg-default-200/50 rounded-lg",
-          title: "font-medium text-base md:text-lg",
-          trigger: "py-4 md:py-6",
-          content: "pt-0 pb-6 text-base text-default-500 whitespace-pre-wrap",
-        }}
-        items={FAQS}
-        selectionMode="multiple"
-        variant="splitted"
-        onSelectionChange={triggerResizeEvent}
+      <Accordion.Root
+        type="multiple"
+        className="w-full max-w-4xl gap-4"
+        onValueChange={triggerResizeEvent}
       >
         {FAQS?.map((item) => (
-          <AccordionItem
+          <Accordion.Item
             key={item.title}
-            indicator={({ isOpen }) => (
-              isOpen ? <MinusIcon className="text-primary" /> : <PlusIcon className="text-primary" />
-            )}
-            title={item.title}
+            value={item.title}
+            className="border border-gray-200 bg-gray-50 hover:bg-gray-100/50 rounded-lg transition-colors"
           >
-            <div className="prose prose-default max-w-none">
-              {item.content}
-            </div>
-          </AccordionItem>
+            <Accordion.Header>
+              <Accordion.Trigger className="flex w-full items-center justify-between px-4 md:px-6 py-4 md:py-6 text-left font-medium text-base md:text-lg focus:outline-none data-[state=open]:text-blue-600">
+                <span>{item.title}</span>
+                <span className="ml-1">
+                  <PlusIcon className="h-5 w-5" />
+                </span>
+              </Accordion.Trigger>
+            </Accordion.Header>
+            <Accordion.Content className="px-4 md:px-6 pb-6 text-base text-gray-600 data-[state=open]:animate-accordionDown">
+              <div className="prose prose-sm max-w-none">
+                {item.content}
+              </div>
+            </Accordion.Content>
+          </Accordion.Item>
         ))}
-      </Accordion>
+      </Accordion.Root>
     </section>
   );
 };

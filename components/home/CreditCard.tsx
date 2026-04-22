@@ -134,37 +134,46 @@ const CreditCard = ({ id, locale }: { id: string; locale: any; }) => {
   };
 
   return (
-    <section className="flex flex-col justify-center max-w-[88%] items-center py-32 gap-12">
+    <section id={id} className="flex flex-col justify-center max-w-[88%] items-center py-32 gap-12">
       <Toaster position="top-center" reverseOrder={false} />
       <div className="flex flex-col text-center gap-4">
         <h2>{locale.title}</h2>
-        <Select onValueChange={(value) => setSelectedCardType(value)}>
-          <SelectTrigger>
-            <SelectValue placeholder={selectedCardType} />
-          </SelectTrigger>
-          <SelectContent>
-            {Object.keys(cardPrefixes).map((cardType) => (
-              <SelectItem key={cardType} value={cardType}>
-                {cardType}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-        <input
-          type="number"
-          value={batchSize}
-          onChange={(e) => setBatchSize(Number(e.target.value))}
-          min="1"
-          placeholder="Number of Cards"
-          className="border p-2 rounded"
-        />
+        <div className="flex flex-col md:flex-row gap-4 items-center">
+          <div className="w-full md:w-48">
+            <label className="text-sm text-gray-600 block mb-2">{locale.card_network_label}</label>
+            <Select onValueChange={(value) => setSelectedCardType(value)}>
+              <SelectTrigger>
+                <SelectValue placeholder={selectedCardType} />
+              </SelectTrigger>
+              <SelectContent>
+                {Object.keys(cardPrefixes).map((cardType) => (
+                  <SelectItem key={cardType} value={cardType}>
+                    {cardType}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="w-full md:w-48">
+            <label className="text-sm text-gray-600 block mb-2">{locale.quantity_label}</label>
+            <input
+              type="number"
+              value={batchSize}
+              onChange={(e) => setBatchSize(Number(e.target.value))}
+              min="1"
+              max="1000"
+              placeholder="1-1000"
+              className="w-full border p-2 rounded"
+            />
+          </div>
+        </div>
         <Button
           onClick={handleGenerate}
           variant="default"
-          className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white"
-          aria-label="Generate Credit Card Number"
+          className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white mt-4"
+          aria-label="Generate Fake Credit Card Numbers"
         >
-          {locale.generate_credit_card_number}
+          {locale.generate_button}
         </Button>
         {creditCardDetails.length > 0 && (
           <>
@@ -175,28 +184,28 @@ const CreditCard = ({ id, locale }: { id: string; locale: any; }) => {
                   <div
                     className="mb-2 cursor-pointer"
                     onClick={() => copyToClipboard(detail.number)}
-                    title="Click to copy"
+                    title={locale.copy_tooltip}
                   >
                     <p className="font-mono text-lg">Card Number: {detail.number}</p>
                   </div>
                   <div
                     className="mb-2 cursor-pointer"
                     onClick={() => copyToClipboard(detail.name)}
-                    title="Click to copy"
+                    title={locale.copy_tooltip}
                   >
                     <p className="font-mono text-lg">Name: {detail.name}</p>
                   </div>
                   <div
                     className="mb-2 cursor-pointer"
                     onClick={() => copyToClipboard(detail.expiryDate)}
-                    title="Click to copy"
+                    title={locale.copy_tooltip}
                   >
                     <p className="font-mono text-lg">Good Thru: {detail.expiryDate}</p>
                   </div>
                   <div
                     className="cursor-pointer"
                     onClick={() => copyToClipboard(detail.ccv)}
-                    title="Click to copy"
+                    title={locale.copy_tooltip}
                   >
                     <p className="font-mono text-lg">CVV/CVV2: {detail.ccv}</p>
                   </div>
@@ -205,13 +214,13 @@ const CreditCard = ({ id, locale }: { id: string; locale: any; }) => {
             </div>
             <div className="flex flex-wrap justify-center gap-2 mt-6">
               <Button onClick={() => exportJSON(creditCardDetails)} variant="outline">
-                Export JSON
+                {locale.export_json}
               </Button>
               <Button onClick={() => exportCSV(creditCardDetails)} variant="outline">
-                Export CSV
+                {locale.export_csv}
               </Button>
               <Button onClick={() => exportXML(creditCardDetails)} variant="outline">
-                Export XML
+                {locale.export_xml}
               </Button>
             </div>
           </>

@@ -42,6 +42,13 @@
   },
   "CreditCard": {
     "title": "Generador de Tarjetas de Crédito",
-    "generate_credit_card_number": "Generar Números de Tarjetas de Crédito"
+    "generate_credit_card_number": "Generar Números de Tarjetas de Crédito",
+    "card_network_label": "Red de tarjeta",
+    "quantity_label": "Cantidad de tarjetas",
+    "generate_button": "Generar Números de Tarjetas de Crédito",
+    "copy_tooltip": "Haz clic para copiar",
+    "export_json": "Exportar JSON",
+    "export_csv": "Exportar CSV",
+    "export_xml": "Exportar XML"
   }
 }

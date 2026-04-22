@@ -1,16 +1,15 @@
 "use client";
 
 import {
-  Button,
   Card,
-  CardBody,
-  CardFooter,
   CardHeader,
-  Divider,
-  Link,
-  Spacer,
-} from "@nextui-org/react";
-
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "@/components/ui/link";
+import { Divider } from "@/components/ui/divider";
+import { Spacer } from "@/components/ui/spacer";
 import { siteConfig } from "@/config/site";
 import { ALL_TIERS } from "@/config/tiers";
 import { FaCheck } from "react-icons/fa";
@@ -43,19 +42,18 @@ const Pricing = ({
       <Spacer y={8} />
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 justify-items-center">
         {TIERS?.map((tier) => (
-          <Card key={tier.key} className="p-3 flex-1 w-[90%]" shadow="md">
+          <Card key={tier.key} className="p-6 flex-1 w-[90%] shadow-md border border-gray-200 bg-white">
             <CardHeader className="flex flex-col items-start gap-2 pb-6">
-              <h2 className="text-large font-medium">{tier.title}</h2>
-              <p className="text-medium text-default-500">{tier.description}</p>
+              <h2 className="text-xl font-semibold">{tier.title}</h2>
+              <p className="text-gray-600">{tier.description}</p>
             </CardHeader>
-            <Divider />
-            <CardBody className="gap-8">
+            <CardContent className="gap-8">
               <p className="flex items-baseline gap-1 pt-2">
-                <span className="inline bg-gradient-to-br from-foreground to-foreground-600 bg-clip-text text-2xl font-semibold leading-7 tracking-tight text-transparent">
+                <span className="inline bg-gradient-to-br from-blue-600 to-blue-800 bg-clip-text text-2xl font-semibold leading-7 tracking-tight text-transparent">
                   {tier.price}
                 </span>
                 {typeof tier.price !== "string" ? (
-                  <span className="text-small font-medium text-default-400">
+                  <span className="text-sm font-medium text-gray-400">
                     {tier.price}
                   </span>
                 ) : null}
@@ -64,23 +62,20 @@ const Pricing = ({
                 {tier.features?.map((feature) => (
                   <li key={feature} className="flex items-center gap-2">
                     <FaCheck className="text-blue-500" />
-                    <p className="text-default-500">{feature}</p>
+                    <p className="text-gray-600">{feature}</p>
                   </li>
                 ))}
               </ul>
-            </CardBody>
+            </CardContent>
             <CardFooter>
-              <Button
-                fullWidth
-                as={Link}
-                color={tier.buttonColor}
+              <Link
                 href={tier.href}
-                variant={tier.buttonVariant}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ring-offset-white bg-blue-600 text-white hover:bg-blue-700 w-full py-3"
               >
                 {tier.buttonText}
-              </Button>
+              </Link>
             </CardFooter>
           </Card>
         ))}

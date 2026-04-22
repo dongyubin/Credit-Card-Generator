@@ -1,15 +1,15 @@
 {
   "Hero": {
-    "title1": "速くて無料",
-    "title2": "クレジットカード生成器",
+    "title1": "無料の",
+    "title2": "偽造クレジットカード生成器",
     "title3": "",
-    "description": "仮のクレジットカード番号を作成する究極の無料ツールです。"
+    "description": "有効なテストカード番号を即座に生成。開発者とテスター向けに設計され、安全な支払いゲートウェイテスト、フォーム検証、ステージングデータベースの充填に最適です。"
   },
   "SocialProof": {
-    "maker": "生成されたクレジットカード番号"
+    "maker": "テスト用に生成された偽造クレジットカード番号"
   },
   "Feature": {
-    "title": "特徴"
+    "title": "偽造クレジットカード生成機能"
   },
   "Pricing": {
     "title": "価格",
@@ -28,20 +28,40 @@
     "title": "よくある質問",
     "description": "クレジットカード生成器に関する最も一般的な質問はこちらです。"
   },
+  "InfoSection": {
+    "title": "クレジットカード生成器の仕組み",
+    "description": ""
+  },
   "CTA": {
-    "title": "今すぐクレジットカード番号を生成",
+    "title": "今すぐ偽造クレジットカード番号を生成",
     "description1": "生成",
-    "description2": " あなたのクレジットカード番号を、",
-    "description3": " 複数のクレジットカードを生成",
+    "description2": " あなたの偽造クレジットカード番号を、",
+    "description3": " テスト用クレジットカードをバッチ生成",
     "description4": "、",
     "description5": " 驚くほど速い",
     "description6": "！"
   },
   "CTAButton": {
-    "title": "クイック使用"
+    "title": "今すぐ生成"
   },
   "CreditCard": {
-    "title": "クレジットカード生成器",
-    "generate_credit_card_number": "クレジットカード番号を生成"
+    "title": "偽造クレジットカード生成器",
+    "generate_credit_card_number": "偽造クレジットカード番号を生成",
+    "card_network_label": "カードネットワーク",
+    "quantity_label": "カード数",
+    "generate_button": "偽造クレジットカード番号を生成",
+    "copy_tooltip": "クリックしてコピー",
+    "export_json": "JSONをエクスポート",
+    "export_csv": "CSVをエクスポート",
+    "export_xml": "XMLをエクスポート",
+    "test_card_title": "テストカード番号",
+    "test_card_description": "Stripe、PayPal、Braintreeの公式テストカード番号：",
+    "test_card_notice": "これらは決済プロバイダーの公式テストカードであり、実際の取引には使用できません。",
+    "test_card_copy_button": "コピー",
+    "test_card_copied_button": "コピー済み",
+    "stripe_docs_label": "Stripe ドキュメント",
+    "stripe_cards": "Stripeテストカード",
+    "paypal_cards": "PayPalテストカード",
+    "braintree_cards": "Braintreeテストカード"
   }
 }

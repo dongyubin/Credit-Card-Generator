@@ -42,6 +42,13 @@
   },
   "CreditCard": {
     "title": "مولد بطاقات الائتمان",
-    "generate_credit_card_number": "توليد أرقام بطاقات الائتمان"
+    "generate_credit_card_number": "توليد أرقام بطاقات الائتمان",
+    "card_network_label": "شبكة البطاقة",
+    "quantity_label": "عدد البطاقات",
+    "generate_button": "توليد أرقام بطاقات الائتمان",
+    "copy_tooltip": "انقر للنسخ",
+    "export_json": "تصدير JSON",
+    "export_csv": "تصدير CSV",
+    "export_xml": "تصدير XML"
   }
 }

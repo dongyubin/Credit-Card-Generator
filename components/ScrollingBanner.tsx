@@ -1,9 +1,6 @@
 "use client";
 
-import type { ScrollShadowProps } from "@nextui-org/react";
-
 import { cn } from "@/lib/utils";
-import { ScrollShadow } from "@nextui-org/react";
 import React from "react";
 
 interface ScrollingBannerProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -30,18 +27,9 @@ const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
     },
     ref
   ) => {
-    const shadowProps: ScrollShadowProps = {
-      isEnabled: showShadow,
-      offset: -20,
-      size: 300,
-      orientation: isVertical ? "vertical" : "horizontal",
-      visibility: "both",
-    };
-
     return (
-      <ScrollShadow
+      <div
         {...props}
-        {...shadowProps}
         ref={ref}
         className={cn(
           "flex",
@@ -50,17 +38,20 @@ const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
             "overflow-y-hidden": isVertical,
             "overflow-x-hidden": !isVertical,
             "max-h-[calc(100vh_-_200px)]": isVertical,
+            // Add shadow classes
+            "scrollbar-hide": true,
+            "[--tw-shadow:0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)]": showShadow && !isVertical,
+            "[--tw-shadow:0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)]": showShadow && isVertical,
           },
           className
         )}
         style={{
-          // @ts-ignore
-          "--gap": gap,
+          "--scroll-gap": gap,
           "--duration": `${duration}s`,
-        }}
+        } as React.CSSProperties}
       >
         <div
-          className={cn("flex w-max items-stretch gap-[--gap]", {
+          className={cn("flex w-max items-stretch", {
             "flex-col": isVertical,
             "h-full": isVertical,
             "animate-scrolling-banner": !isVertical,
@@ -68,12 +59,13 @@ const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
             "[animation-direction:reverse]": isReverse,
             "hover:[animation-play-state:paused]": shouldPauseOnHover,
           })}
+          style={{ gap: gap, "--scroll-gap": gap } as React.CSSProperties}
         >
           {React.Children.map(children, (child) =>
             React.cloneElement(child as any)
           )}
         </div>
-      </ScrollShadow>
+      </div>
     );
   }
 );

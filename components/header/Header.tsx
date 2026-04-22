@@ -15,6 +15,10 @@ const links = [
     href: "#CreditCard",
   },
   {
+    label: "Test Cards",
+    href: "#TestCards",
+  },
+  {
     label: "Features",
     href: "#Features",
   },

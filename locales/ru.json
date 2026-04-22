@@ -42,6 +42,13 @@
   },
   "CreditCard": {
     "title": "Генератор кредитных карт",
-    "generate_credit_card_number": "Создать номера кредитных карт"
+    "generate_credit_card_number": "Создать номера кредитных карт",
+    "card_network_label": "Платежная сеть",
+    "quantity_label": "Количество карт",
+    "generate_button": "Создать номера кредитных карт",
+    "copy_tooltip": "Нажмите, чтобы скопировать",
+    "export_json": "Экспорт JSON",
+    "export_csv": "Экспорт CSV",
+    "export_xml": "Экспорт XML"
   }
 }

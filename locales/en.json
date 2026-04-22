@@ -1,15 +1,15 @@
 {
   "Hero": {
-    "title1": "Free Credit Card Generator",
+    "title1": "Free Fake Credit Card Generator",
     "title2": "Instant Valid Test Cards for Visa, MasterCard, Amex & More",
-    "title3": "100 % fake, non-working numbers • No sign-up • Unlimited batch export (JSON / CSV / XML)",
-    "description": "Generate structurally-valid dummy credit cards in one click. Built for QA engineers and developers to safely test payment gateways, validate forms, and populate staging databases—without ever touching real financial data."
+    "title3": "100% Fake, Non-Working Numbers • No Registration • Unlimited Batch Export (JSON / CSV / XML)",
+    "description": "Generate structurally-valid fake credit cards instantly. Built for developers and testers to safely test payment gateways, validate forms, and populate staging databases—without using real financial data. Your go-to credit card number generator for all testing needs."
   },
   "SocialProof": {
-    "maker": "Credit card numbers generated"
+    "maker": "Fake credit card numbers generated for testing"
   },
   "Feature": {
-    "title": "Credit Card Generator Feature"
+    "title": "Fake Credit Card Generator Features"
   },
   "Pricing": {
     "title": "Pricing",
@@ -34,25 +34,48 @@
   },
   "StripeTestCards": {
     "title": "Official Stripe Test Cards",
-    "description": "Use Stripe's fixed success-test card numbers when you need to verify a real Stripe test-mode payment form instead of generating generic dummy cards.",
-    "helperText": "These are official Stripe test values for sandbox and test mode. They are separate from this site's random card generator and should be used only for Stripe integration testing.",
-    "copyLabel": "Copy number",
-    "sourceLabel": "View full Stripe testing docs"
+    "description": "Expanded Stripe success-test cards by brand, debit, prepaid, and card format for interactive payment-form testing.",
+    "helperText": "Use these official Stripe card numbers in sandbox or test mode. This section focuses on successful brand-based card testing only.",
+    "copyLabel": "Copy",
+    "copiedLabel": "Copied",
+    "sourceLabel": "Stripe docs"
   },
   "CTA": {
-    "title": "Generate Credit Card Numbers Now",
+    "title": "Generate Fake Credit Card Numbers Now",
     "description1": "Generate",
-    "description2": " your credit card numbers,",
+    "description2": " your fake credit card numbers,",
     "description3": " batch generation of",
-    "description4": " credit cards,",
+    "description4": " test credit cards,",
     "description5": " lightning fast",
     "description6": "!"
   },
   "CTAButton": {
-    "title": "Quick Use"
+    "title": "Generate Now"
   },
   "CreditCard": {
-    "title": "Credit Card Generator",
-    "generate_credit_card_number": "Generate Credit Card Numbers"
+    "title": "Fake Credit Card Generator",
+    "generate_credit_card_number": "Generate Fake Credit Card Numbers",
+    "card_network_label": "Card Network",
+    "quantity_label": "Number of Cards",
+    "generate_button": "Generate Fake Credit Card Numbers",
+    "copy_tooltip": "Click to copy",
+    "export_json": "Export JSON",
+    "export_csv": "Export CSV",
+    "export_xml": "Export XML",
+    "paypal_triggers_title": "PayPal Test Triggers",
+    "paypal_triggers_description": "Use PayPal sandbox rejection triggers to simulate declined and error card flows.",
+    "paypal_triggers_helper": "Enter a trigger value in the cardholder name field while testing with a sandbox Visa card, a future expiration date, and any valid CVV.",
+    "paypal_triggers_source": "PayPal docs",
+    "test_card_title": "Test Cards",
+    "test_card_description": "Official test numbers from Stripe, PayPal & Braintree for testing purposes:",
+    "test_card_notice": "These are official test cards from payment providers and won't work for real transactions.",
+    "test_card_copy_button": "Copy",
+    "test_card_copied_button": "Copied",
+    "stripe_docs_label": "Stripe docs",
+    "stripe_cards_description": "Expanded Stripe success-test cards by brand, debit, prepaid, and card format.",
+    "stripe_cards_helper": "Use these official Stripe card numbers in sandbox or test mode. They are for successful brand-based payment testing only.",
+    "stripe_cards": "Stripe Test Cards",
+    "paypal_cards": "PayPal Test Cards",
+    "braintree_cards": "Braintree Test Cards"
   }
 }
