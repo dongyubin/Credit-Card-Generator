@@ -32,6 +32,13 @@
     "title": "Credit Card Generator InfoSection",
     "description": ""
   },
+  "StripeTestCards": {
+    "title": "Official Stripe Test Cards",
+    "description": "Use Stripe's fixed success-test card numbers when you need to verify a real Stripe test-mode payment form instead of generating generic dummy cards.",
+    "helperText": "These are official Stripe test values for sandbox and test mode. They are separate from this site's random card generator and should be used only for Stripe integration testing.",
+    "copyLabel": "Copy number",
+    "sourceLabel": "View full Stripe testing docs"
+  },
   "CTA": {
     "title": "Generate Credit Card Numbers Now",
     "description1": "Generate",
