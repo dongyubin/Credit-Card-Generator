@@ -1,15 +1,15 @@
 {
   "Hero": {
     "title1": "免费",
-    "title2": "伪造信用卡生成器",
+    "title2": "美国信用卡生成器",
     "title3": "",
     "description": "即时生成有效的测试信用卡号码。专为开发者和测试人员设计，用于安全地测试支付网关、验证表单和填充暂存数据库—无需使用真实金融数据。您的信用卡号码生成器的首选解决方案。"
   },
   "SocialProof": {
-    "maker": "为测试生成的伪造信用卡号码"
+    "maker": "为测试生成的美国信用卡号码"
   },
   "Feature": {
-    "title": "伪造信用卡生成器功能"
+    "title": "美国信用卡生成器功能"
   },
   "Pricing": {
     "title": "定价",
@@ -33,9 +33,9 @@
     "description": ""
   },
   "CTA": {
-    "title": "立即生成伪造的信用卡号码",
+    "title": "立即生成美国的信用卡号码",
     "description1": "生成",
-    "description2": "你的伪造信用卡号码，",
+    "description2": "你的美国信用卡号码，",
     "description3": "批量生成",
     "description4": "测试信用卡，",
     "description5": "闪电般快速",
@@ -45,11 +45,11 @@
     "title": "立即生成"
   },
   "CreditCard": {
-    "title": "伪造信用卡生成器",
-    "generate_credit_card_number": "生成伪造的信用卡号码",
+    "title": "美国信用卡生成器",
+    "generate_credit_card_number": "生成美国的信用卡号码",
     "card_network_label": "卡网络",
     "quantity_label": "卡片数量",
-    "generate_button": "生成伪造的信用卡号码",
+    "generate_button": "生成美国的信用卡号码",
     "copy_tooltip": "点击复制",
     "export_json": "导出 JSON",
     "export_csv": "导出 CSV",
