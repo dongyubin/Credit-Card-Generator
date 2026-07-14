@@ -1,6 +1,6 @@
 # 免费信用卡生成器与测试卡号 — 支持 Visa、Mastercard、Amex 等
 
-[English](README.md) | [简体中文](README-zh.md)
+[English](../README.md) | [简体中文](../README-zh.md)
 
 一款面向开发者、QA 工程师和学生的免费浏览器端**虚拟信用卡生成器（fake credit card generator）与支付测试卡查询工具**。你可以生成用于表单测试的虚拟信用卡数据，将测试数据集导出为 JSON、CSV 或 XML，并查询适用于 Stripe、PayPal、Braintree 和 Mastercard Sandbox 测试环境的测试卡号。
 
@@ -8,7 +8,7 @@
 
 > **仅限测试：** 生成的号码和公开测试卡没有任何资金价值，不能用于真实购物、支付、账户验证或身份验证。切勿在测试环境中输入真实持卡人数据。
 
-[![免费信用卡生成器与支付测试卡](./public/og.png)](https://creditcardgenerator.wangdu.site/zh)
+[![免费信用卡生成器与支付测试卡](../public/og.png)](https://creditcardgenerator.wangdu.site/zh)
 
 ## 按测试需求选择功能
 
