@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { PAYPAL_TEST_TRIGGERS } from "@/config/paypalTestTriggers";
 import { STRIPE_SUCCESS_TEST_CARDS } from "@/config/stripeTestCards";
 import { Copy, ExternalLink } from "lucide-react";
+import MastercardTestCards from "@/components/home/MastercardTestCards";
 import PayPalTestTriggers from "@/components/home/PayPalTestTriggers";
 import StripeTestCards from "@/components/home/StripeTestCards";
 import { useState } from "react";
@@ -87,10 +88,12 @@ const copyToClipboard = (text: string) => {
 const TestCardsSection = ({
   id,
   locale,
+  mastercardLocale,
   stripeLocale,
 }: {
   id?: string;
   locale: any;
+  mastercardLocale?: any;
   stripeLocale?: any;
 }) => {
   const [copiedStates, setCopiedStates] = useState<{[key: string]: boolean}>({});
@@ -138,6 +141,11 @@ const TestCardsSection = ({
         </Button>
         <Button asChild variant="outline" size="sm">
           <a href="#BraintreeTestCards">{locale.braintree_cards}</a>
+        </Button>
+        <Button asChild variant="outline" size="sm">
+          <a href="#MastercardTestCards">
+            {mastercardLocale?.title || "Mastercard Test Cards"}
+          </a>
         </Button>
       </nav>
 
@@ -256,6 +264,10 @@ const TestCardsSection = ({
             )}
           </article>
         ))}
+        <MastercardTestCards
+          id="MastercardTestCards"
+          locale={mastercardLocale}
+        />
       </div>
     </section>
   );

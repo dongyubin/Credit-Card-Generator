@@ -85,11 +85,11 @@ const PayPalTestTriggers = ({
             </p>
 
             <div className="mt-5 grid gap-3 rounded-xl bg-default-100/70 p-4 text-sm text-default-700">
-              <p>
+              <p className="break-all">
                 <span className="font-semibold text-foreground">Response code:</span>{" "}
                 {item.responseCode}
               </p>
-              <p>
+              <p className="break-all">
                 <span className="font-semibold text-foreground">Processor code:</span>{" "}
                 {item.codeDescription}
               </p>

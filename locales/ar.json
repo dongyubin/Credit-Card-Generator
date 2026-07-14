@@ -28,6 +28,37 @@
     "title": "الأسئلة الشائعة",
     "description": "إليك بعض الأسئلة الأكثر شيوعًا حول مولد بطاقات الائتمان."
   },
+  "StripeTestCards": {
+    "title": "بطاقات اختبار Stripe الرسمية",
+    "description": "بطاقات Stripe لاختبارات النجاح حسب العلامة والخصم والدفع المسبق وتنسيق البطاقة لاختبار نماذج الدفع التفاعلية.",
+    "helperText": "استخدم أرقام Stripe الرسمية هذه في وضع Sandbox أو الاختبار فقط. وهي مخصصة لاختبارات الدفع الناجحة حسب العلامة.",
+    "copyLabel": "نسخ",
+    "copiedLabel": "تم النسخ",
+    "sourceLabel": "وثائق Stripe"
+  },
+  "MastercardTestCards": {
+    "title": "بطاقات اختبار Mastercard",
+    "description": "أرقام بطاقات خصم رسمية لبيئتي Mastercard Sandbox وMTF. لا يوفر المصدر تواريخ انتهاء الصلاحية أو رموز CVV.",
+    "helperText": "استخدم أرقام بطاقات الاختبار المنشورة فقط في بيئتي Sandbox أو MTF. لا تستخدم أرقام بطاقات مستهلكين حقيقية للاختبار.",
+    "consumerCards": "أرقام بطاقات المستهلكين",
+    "commercialCards": "أرقام البطاقات التجارية",
+    "consumerCount": "بطاقات مستهلكين: {count}",
+    "commercialCount": "بطاقات تجارية: {count}",
+    "noCards": "لا توجد بطاقات مدرجة",
+    "fundsTitle": "أرقام البطاقات حسب وقت توفر الأموال",
+    "cardNumber": "رقم البطاقة",
+    "fundsAvailability": "توفر الأموال",
+    "nextBusinessDay": "يوم العمل التالي",
+    "twoToFiveBusinessDays": "من يومي عمل إلى خمسة أيام",
+    "immediate": "فوري",
+    "anyOtherPublishedCard": "أي رقم بطاقة آخر منشور على Mastercard Developers",
+    "copyLabel": "نسخ",
+    "copiedLabel": "تم النسخ",
+    "copySuccess": "تم نسخ بطاقة اختبار Mastercard",
+    "copyError": "تعذر النسخ",
+    "sourceLabel": "وثائق Mastercard",
+    "warning": "هذه الأرقام مخصصة لبيئات اختبار Mastercard فقط ولا تعمل في المعاملات الحقيقية."
+  },
   "CTA": {
     "title": "قم بإنشاء أرقام بطاقات الائتمان الآن",
     "description1": "توليد",
@@ -49,6 +80,21 @@
     "copy_tooltip": "انقر للنسخ",
     "export_json": "تصدير JSON",
     "export_csv": "تصدير CSV",
-    "export_xml": "تصدير XML"
+    "export_xml": "تصدير XML",
+    "paypal_triggers_title": "مشغلات اختبار PayPal",
+    "paypal_triggers_description": "استخدم مشغلات رفض PayPal Sandbox لمحاكاة المدفوعات المرفوضة وتدفقات الأخطاء.",
+    "paypal_triggers_helper": "أدخل قيمة المشغل في اسم حامل البطاقة أثناء الاختبار ببطاقة Visa Sandbox وتاريخ مستقبلي وأي CVV صالح.",
+    "paypal_triggers_source": "وثائق PayPal",
+    "test_card_title": "بطاقات الاختبار",
+    "test_card_description": "أرقام اختبار رسمية من Stripe وPayPal وBraintree وMastercard:",
+    "test_card_notice": "هذه بطاقات اختبار رسمية من مزودي الدفع ولن تعمل في المعاملات الحقيقية.",
+    "test_card_copy_button": "نسخ",
+    "test_card_copied_button": "تم النسخ",
+    "stripe_docs_label": "وثائق Stripe",
+    "stripe_cards_description": "بطاقات Stripe لاختبارات النجاح حسب العلامة والنوع والتنسيق.",
+    "stripe_cards_helper": "استخدم أرقام Stripe الرسمية هذه في وضع Sandbox أو الاختبار فقط.",
+    "stripe_cards": "بطاقات اختبار Stripe",
+    "paypal_cards": "بطاقات اختبار PayPal",
+    "braintree_cards": "بطاقات اختبار Braintree"
   }
 }

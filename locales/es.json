@@ -28,6 +28,37 @@
     "title": "Preguntas Frecuentes",
     "description": "Aquí están algunas de las preguntas más comunes sobre el generador de tarjetas de crédito."
   },
+  "StripeTestCards": {
+    "title": "Tarjetas de prueba oficiales de Stripe",
+    "description": "Tarjetas de éxito de Stripe por marca, débito, prepago y formato para probar formularios de pago interactivos.",
+    "helperText": "Usa estos números oficiales de Stripe únicamente en modo Sandbox o de prueba. Están destinados a pagos de prueba exitosos por marca.",
+    "copyLabel": "Copiar",
+    "copiedLabel": "Copiado",
+    "sourceLabel": "Documentación de Stripe"
+  },
+  "MastercardTestCards": {
+    "title": "Tarjetas de prueba de Mastercard",
+    "description": "Números oficiales de tarjetas de débito para los entornos Sandbox y MTF de Mastercard. La fuente no proporciona fechas de vencimiento ni códigos CVV.",
+    "helperText": "Usa únicamente números de prueba publicados en entornos Sandbox o MTF. Nunca uses números reales de consumidores para realizar pruebas.",
+    "consumerCards": "Números de tarjetas de consumo",
+    "commercialCards": "Números de tarjetas comerciales",
+    "consumerCount": "{count} de consumo",
+    "commercialCount": "{count} comerciales",
+    "noCards": "No hay tarjetas publicadas",
+    "fundsTitle": "Números de tarjeta según la disponibilidad de fondos",
+    "cardNumber": "Número de tarjeta",
+    "fundsAvailability": "Disponibilidad de fondos",
+    "nextBusinessDay": "Siguiente día hábil",
+    "twoToFiveBusinessDays": "De dos a cinco días hábiles",
+    "immediate": "Inmediata",
+    "anyOtherPublishedCard": "Cualquier otro número de tarjeta publicado en Mastercard Developers",
+    "copyLabel": "Copiar",
+    "copiedLabel": "Copiado",
+    "copySuccess": "Tarjeta de prueba de Mastercard copiada",
+    "copyError": "No se pudo copiar",
+    "sourceLabel": "Documentación de Mastercard",
+    "warning": "Estos números son exclusivos para entornos de prueba de Mastercard y no funcionan en transacciones reales."
+  },
   "CTA": {
     "title": "Genera Números de Tarjetas de Crédito Ahora",
     "description1": "Genera",
@@ -49,6 +80,21 @@
     "copy_tooltip": "Haz clic para copiar",
     "export_json": "Exportar JSON",
     "export_csv": "Exportar CSV",
-    "export_xml": "Exportar XML"
+    "export_xml": "Exportar XML",
+    "paypal_triggers_title": "Activadores de prueba de PayPal",
+    "paypal_triggers_description": "Usa activadores de rechazo de PayPal Sandbox para simular pagos rechazados y flujos de error.",
+    "paypal_triggers_helper": "Introduce el activador en el nombre del titular mientras pruebas con una Visa Sandbox, una fecha futura y cualquier CVV válido.",
+    "paypal_triggers_source": "Documentación de PayPal",
+    "test_card_title": "Tarjetas de prueba",
+    "test_card_description": "Números de prueba oficiales de Stripe, PayPal, Braintree y Mastercard:",
+    "test_card_notice": "Estas son tarjetas de prueba oficiales de proveedores de pago y no funcionan en transacciones reales.",
+    "test_card_copy_button": "Copiar",
+    "test_card_copied_button": "Copiado",
+    "stripe_docs_label": "Documentación de Stripe",
+    "stripe_cards_description": "Tarjetas de éxito de Stripe por marca, débito, prepago y formato.",
+    "stripe_cards_helper": "Usa estos números oficiales de Stripe únicamente en modo Sandbox o de prueba.",
+    "stripe_cards": "Tarjetas de prueba de Stripe",
+    "paypal_cards": "Tarjetas de prueba de PayPal",
+    "braintree_cards": "Tarjetas de prueba de Braintree"
   }
 }
