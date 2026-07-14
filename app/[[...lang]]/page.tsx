@@ -28,15 +28,12 @@ export default async function LangHome({
       {/* <ScrollingLogos /> */}
 
       <CreditCard id="CreditCard" locale={dict.CreditCard} />
-      {(langName.startsWith("en") ||
-        langName.startsWith("zh") ||
-        langName === "ja") && (
-        <TestCardsSection
-          id="TestCards"
-          locale={dict.CreditCard}
-          stripeLocale={dict.StripeTestCards}
-        />
-      )}
+      <TestCardsSection
+        id="TestCards"
+        locale={dict.CreditCard}
+        mastercardLocale={dict.MastercardTestCards}
+        stripeLocale={dict.StripeTestCards}
+      />
       {/* USP (Unique Selling Proposition) */}
       <Feature id="Features" locale={dict.Feature} langName={langName} />
 

@@ -28,6 +28,37 @@
     "title": "Часто задаваемые вопросы",
     "description": "Здесь ответы на некоторые из самых распространенных вопросов о генераторе кредитных карт."
   },
+  "StripeTestCards": {
+    "title": "Официальные тестовые карты Stripe",
+    "description": "Карты Stripe для успешных тестов по брендам, дебетовым и предоплаченным картам и форматам номеров.",
+    "helperText": "Используйте официальные номера Stripe только в Sandbox или тестовом режиме. Они предназначены для успешных тестов платежей по брендам.",
+    "copyLabel": "Копировать",
+    "copiedLabel": "Скопировано",
+    "sourceLabel": "Документация Stripe"
+  },
+  "MastercardTestCards": {
+    "title": "Тестовые карты Mastercard",
+    "description": "Официальные номера дебетовых карт для сред Mastercard Sandbox и MTF. Источник не предоставляет срок действия и CVV.",
+    "helperText": "Используйте опубликованные тестовые номера только в средах Sandbox или MTF. Никогда не используйте реальные номера потребительских карт для тестирования.",
+    "consumerCards": "Номера потребительских карт",
+    "commercialCards": "Номера коммерческих карт",
+    "consumerCount": "Потребительских: {count}",
+    "commercialCount": "Коммерческих: {count}",
+    "noCards": "Карты не указаны",
+    "fundsTitle": "Номера карт для разных сроков доступности средств",
+    "cardNumber": "Номер карты",
+    "fundsAvailability": "Доступность средств",
+    "nextBusinessDay": "Следующий рабочий день",
+    "twoToFiveBusinessDays": "От двух до пяти рабочих дней",
+    "immediate": "Немедленно",
+    "anyOtherPublishedCard": "Любой другой номер карты, опубликованный на Mastercard Developers",
+    "copyLabel": "Копировать",
+    "copiedLabel": "Скопировано",
+    "copySuccess": "Тестовая карта Mastercard скопирована",
+    "copyError": "Не удалось скопировать",
+    "sourceLabel": "Документация Mastercard",
+    "warning": "Эти номера предназначены только для тестовых сред Mastercard и не работают в реальных транзакциях."
+  },
   "CTA": {
     "title": "Создайте номера кредитных карт прямо сейчас",
     "description1": "Создавайте",
@@ -49,6 +80,21 @@
     "copy_tooltip": "Нажмите, чтобы скопировать",
     "export_json": "Экспорт JSON",
     "export_csv": "Экспорт CSV",
-    "export_xml": "Экспорт XML"
+    "export_xml": "Экспорт XML",
+    "paypal_triggers_title": "Тестовые триггеры PayPal",
+    "paypal_triggers_description": "Используйте триггеры отказа PayPal Sandbox для имитации отклоненных платежей и ошибок.",
+    "paypal_triggers_helper": "Введите триггер в поле имени держателя при тестировании с Sandbox Visa, будущей датой и любым допустимым CVV.",
+    "paypal_triggers_source": "Документация PayPal",
+    "test_card_title": "Тестовые карты",
+    "test_card_description": "Официальные тестовые номера Stripe, PayPal, Braintree и Mastercard:",
+    "test_card_notice": "Это официальные тестовые карты платежных провайдеров, которые не работают в реальных транзакциях.",
+    "test_card_copy_button": "Копировать",
+    "test_card_copied_button": "Скопировано",
+    "stripe_docs_label": "Документация Stripe",
+    "stripe_cards_description": "Карты Stripe для успешных тестов по брендам, типам и форматам.",
+    "stripe_cards_helper": "Используйте официальные номера Stripe только в Sandbox или тестовом режиме.",
+    "stripe_cards": "Тестовые карты Stripe",
+    "paypal_cards": "Тестовые карты PayPal",
+    "braintree_cards": "Тестовые карты Braintree"
   }
 }
